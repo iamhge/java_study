@@ -6,9 +6,15 @@ import org.opentutorials.iot.Security;
 import javax.swing.JOptionPane;
 
 public class OKJavaGoHomeInput {
+    // args : parameter, 매개변수
     public static void main(String[] args) {
-        String id = JOptionPane.showInputDialog("Enter a ID");
-        double bright = Double.parseDouble(JOptionPane.showInputDialog("Enter a Bright level"));
+        // 입력값 받는 방법 1) Dialog
+        // String id = JOptionPane.showInputDialog("Enter a ID");
+        // double bright = Double.parseDouble(JOptionPane.showInputDialog("Enter a Bright level"));
+
+        // 입력값 받는 방법 2) args parameter
+        String id = args[0];
+        double bright = Double.parseDouble(args[1]);
 
         // Elevator call
         Elevator myElevator = new Elevator(id);
