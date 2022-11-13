@@ -11,7 +11,7 @@ class Person {
         // 그래서 this를 사용해서 instance를 initialize 하기도 전에 메모리에 무언가를 할당할 수 없다.
         // 생성되지 않은 메모리에 값을 assign하는 일이 일어날 수 있다.
         // 따라서 this는 가장 먼저 나타나는 statement여야한다.
-        int i = 1; // <- error
+//        int i = 1; // <- error
 
         // default로 설정해줄 수 있다.
         this("이름없음", 1);
