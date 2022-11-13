@@ -16,4 +16,12 @@ public class Student {
 //        studentLee.address = "서울시 서초구 서초동";
 //        studentLee.showStudentInfo();
 //    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String name) {
+        studentName = name;
+    }
 }
